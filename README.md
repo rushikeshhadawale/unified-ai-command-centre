@@ -1,14 +1,15 @@
+**Unified AI Command Centre**
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f42c970b-614a-42ec-b8fe-277f94aa7652" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7816fd8e-5949-4d3e-92a7-83c6ad56c7a1" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c5e3bc6c-aca6-4a6e-b0a4-f3c9e68c8dff" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/da9ed392-cccf-4c57-92ad-5fdec3819730" />
 
-Unified AI Command Centre
+**Unified AI Command Centre**
 
-A full-stack intelligent communication system that automates WhatsApp (text + voice), email notifications, workflow automation, and real-time conversational AI for employers and domestic workers.
+**A full-stack intelligent communication system that automates WhatsApp (text + voice), email notifications, workflow automation, and real-time conversational AI for employers and domestic workers.**
 
-Project Overview
+**Project Overview**
 
 The Unified AI Command Centre is a centralized operations dashboard that enables organizations to:
 
@@ -24,7 +25,7 @@ Auto-respond using rules or escalate to human operator
 
 Provide a clean, modern admin UI for operations teams
 
-The system supports 4 languages:
+**The system supports 4 languages:**
 
 English
 
@@ -34,8 +35,8 @@ Kannada
 
 Nepali
 
-🚀 Key Features
-🔔 Notification Engine
+ Key Features
+ Notification Engine
 
 WhatsApp Text (mock)
 
@@ -45,7 +46,7 @@ Email (mock SMTP)
 
 JSON template variables (e.g., {name}, {salary_amount})
 
-🤖 AI Layer
+ **AI Layer**
 
 Language detection
 
@@ -55,7 +56,7 @@ Sentiment tagging
 
 Auto replies (COMPLETION / CONFUSED / OPT_OUT)
 
-🔄 Workflow Automation
+**Workflow Automation**
 
 Onboarding flow
 
@@ -67,7 +68,7 @@ Multi-step workflow structure
 
 Triggers: time-based, event-based, reply-based
 
-🖥️ Admin Dashboard
+**Admin Dashboard**
 
 Built using React:
 
@@ -81,7 +82,7 @@ Monitor conversations
 
 Modern dark UI with cards, sidebar, and table views
 
-🏗️ System Architecture
+**System Architecture**
                 ┌─────────────────────┐
                 │   Admin Dashboard   │
                 │       (React)       │
@@ -102,7 +103,7 @@ Modern dark UI with cards, sidebar, and table views
                  │     PostgreSQL DB     │
                  └──────────────────────┘
 
-🧰 Tech Stack
+**Tech Stack**
 Frontend
 
 React
@@ -125,12 +126,12 @@ Mock WhatsApp + Email integrations
 
 Mock TTS + ASR
 
-Database
+**Database**
 
 PostgreSQL
 (SQLite also supported for local testing)
 
-📁 Folder Structure
+**Folder Structure**
 unified-ai-command-centre/
 │
 ├── backend/
@@ -153,8 +154,8 @@ unified-ai-command-centre/
 │
 └── README.md
 
-⚙️ Setup Instructions
-1️⃣ Backend Setup (FastAPI)
+ **Setup Instructions**
+**Backend Setup (FastAPI)**
 Step 1 – Navigate to backend folder
 cd unified-ai-command-centre/backend
 
@@ -174,13 +175,13 @@ Step 5 – Run Backend
 python main.py
 
 
-Backend will start at:
+**Backend will start at:**
 
 🔗 http://localhost:8000
 
 🔗 API Docs: http://localhost:8000/docs
 
-2️⃣ Frontend Setup (React)
+**Frontend Setup (React)**
 Step 1 – Navigate to frontend
 cd unified-ai-command-centre/frontend
 
@@ -191,11 +192,11 @@ Step 3 – Start React app
 npm start
 
 
-Frontend runs at:
+**Frontend runs at:**
 
-🔗 http://localhost:3000
+ http://localhost:3000
 
-🧪 Testing Webhooks (WhatsApp Reply Simulation)
+ Testing Webhooks (WhatsApp Reply Simulation)
 
 Use cURL/Postman:
 
@@ -207,7 +208,7 @@ curl -X POST http://localhost:8000/webhook/whatsapp \
       }'
 
 
-Backend auto-detects:
+**Backend auto-detects:**
 
 Language → Hindi
 
@@ -219,7 +220,7 @@ Auto reply: “Thanks, payment recorded”
 
 View result in Conversations page.
 
-📊 Database Schema Overview
+**Database Schema Overview**
 
 Tables included:
 
@@ -241,46 +242,24 @@ conversations
 
 Schema defined using SQLAlchemy ORM.
 
-📸 Screenshots (Add Your Images Here)
+**Screenshots**
 
 Create a folder:
 
 /screenshots
 
+Dashboard view:
 
-And upload:
+Users page:<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f42c970b-614a-42ec-b8fe-277f94aa7652" />
 
-Dashboard view
+Templates page:<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7816fd8e-5949-4d3e-92a7-83c6ad56c7a1" />
 
-Users page
+Send Notification page:<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c5e3bc6c-aca6-4a6e-b0a4-f3c9e68c8dff" />
 
-Templates page
+Conversations timeline:<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/da9ed392-cccf-4c57-92ad-5fdec3819730" />
 
-Send Notification page
 
-Conversations timeline
 
-Then embed here:
 
-![Dashboard](screenshots/dashboard.png)
-
-📦 Deployment (Optional Future Work)
-
-Deploy FastAPI to Render / Railway
-
-Deploy React to Netlify / Vercel
-
-Migrate DB to PostgreSQL cloud (Supabase)
-
-Integrate real WhatsApp Cloud API
-
-Integrate real Text-To-Speech + Speech-To-Text
-
-🤝 Contributing
-
-Pull Requests are welcome.
-Please create a discussion before major changes.
-
-📜 License
 
 MIT License (or whatever license you choose)
